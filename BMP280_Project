@@ -1,8 +1,8 @@
 #include <Wire.h>
 #include <Adafruit_BMP280.h>
 
-int kirmizi_led=2;
-int yesil_led=3;
+int red_led=2;
+int green_led=3;
 int buzzer=4;
 
 
@@ -10,8 +10,8 @@ Adafruit_BMP280 bmp; // I2C
 
 void setup() {
 
-  pinMode(kirmizi_led,OUTPUT);
-  pinMode(yesil_led,OUTPUT);
+  pinMode(red_led,OUTPUT);
+  pinMode(green_led,OUTPUT);
   pinMode(buzzer,OUTPUT);
   
   Serial.begin(9600);
@@ -58,8 +58,8 @@ void loop() {
     if (bmp.readPressure() <= 50000.0)
     {
       
-    digitalWrite(kirmizi_led,HIGH);
-    digitalWrite(yesil_led,LOW);
+    digitalWrite(red_led,HIGH);
+    digitalWrite(green_led,LOW);
     digitalWrite(buzzer,HIGH);
     
     Serial.println(" Critical Oxygen Level ");
@@ -71,8 +71,8 @@ void loop() {
 
   {
 
-  digitalWrite(yesil_led,HIGH);
-  digitalWrite(kirmizi_led,LOW);
+  digitalWrite(green_led,HIGH);
+  digitalWrite(red_led,LOW);
   digitalWrite(buzzer,LOW);
   
   Serial.println(" Normal Oxygen Level ");
