@@ -46,8 +46,8 @@ void loop() {
     Serial.println(" *C");
 
     Serial.print(F("Pressure = "));
-    Serial.print((bmp.readPressure())/100);
-    Serial.println(" hPa");
+    Serial.print((bmp.readPressure()));
+    Serial.println(" Pa");
 
     Serial.print(F("Approx altitude = "));
     Serial.print(bmp.readAltitude(1013.25)); /* 1 Atm epual to 10m approximately*/
