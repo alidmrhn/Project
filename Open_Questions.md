@@ -25,9 +25,9 @@ module into each module.
 Q3) What are the main features of Real-Time Operating Systems and how do they differ from regular OS’s?
 
 
-A3) In Rtos, time limits are clearly stated and the system is strictly followed.
+A3) In RTOS, time limits are clearly stated and the system is strictly followed.
 It focuses on a single application and tasks are queued according to their importance. 
 In this way, important tasks are completed on time. The differences between them; 
 Regular OS tries to do all the processes or tasks at the same time. It doesn't prioritize like Rtos.
-Rtos makes the most of memory resource, but general os does not. Rtos general usage area is embedded systems.
+Rtos makes the most of memory resource, but general os does not. RTOS general usage area is embedded systems.
 The usage area of regular OS is computer, server etc.
